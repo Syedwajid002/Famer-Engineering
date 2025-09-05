@@ -28,17 +28,17 @@ const Contact: React.FC = () => {
     {
       icon: <Phone className="w-6 h-6" />,
       title: "Phone Numbers",
-      details: ["+966 11 123 4567 (Riyadh)", "+974 4444 5678 (Doha)"]
+      details: ["+966 53 820 9690 (Riyadh)", "+966 56 296 2811 (Jeddah)"]
     },
     {
       icon: <Mail className="w-6 h-6" />,
       title: "Email Addresses",
-      details: ["info@gulfengineering.com", "projects@gulfengineering.com"]
+      details: ["info@OutStandingDimensions.com", "projects@OutStandingDimensions.com"]
     },
     {
       icon: <MapPin className="w-6 h-6" />,
       title: "Office Locations",
-      details: ["King Fahd Road, Riyadh 12345", "West Bay, Doha, Qatar"]
+      details: ["King Fahd Road, Riyadh 12345", "Cornishe, Jeddah, Saudi Arabia"]
     },
     {
       icon: <Clock className="w-6 h-6" />,
@@ -57,7 +57,7 @@ const Contact: React.FC = () => {
           </h2>
           <div className="w-24 h-1 gradient-gold mx-auto mb-6"></div>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            Ready to bring your vision to life? Get in touch with our expert team for a 
+            Ready to bring your vision to life? Get in touch with our expert team for a
             consultation on your next engineering or architectural project.
           </p>
         </div>
@@ -66,8 +66,9 @@ const Contact: React.FC = () => {
           {/* Contact Form */}
           <div>
             <div className="bg-gray-50 rounded-2xl p-8">
+              <h1 >Have any Queries ?</h1>
               <h3 className="text-2xl font-semibold text-blue-900 mb-6">Send us a Message</h3>
-              
+
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
@@ -84,7 +85,7 @@ const Contact: React.FC = () => {
                     placeholder="Enter your full name"
                   />
                 </div>
-                
+
                 <div>
                   <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
                     Email Address *
@@ -100,7 +101,7 @@ const Contact: React.FC = () => {
                     placeholder="Enter your email address"
                   />
                 </div>
-                
+
                 <div>
                   <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-2">
                     Phone Number
@@ -115,7 +116,7 @@ const Contact: React.FC = () => {
                     placeholder="+966 or +974 number"
                   />
                 </div>
-                
+
                 <div>
                   <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
                     Project Details *
@@ -131,7 +132,7 @@ const Contact: React.FC = () => {
                     placeholder="Tell us about your project requirements..."
                   />
                 </div>
-                
+
                 <button
                   type="submit"
                   className="w-full gradient-gold text-white py-4 rounded-lg font-semibold text-lg hover:shadow-luxury transition-all duration-300 hover:scale-105 flex items-center justify-center space-x-2"
@@ -173,7 +174,7 @@ const Contact: React.FC = () => {
                   allowFullScreen
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
-                  title="Gulf Engineering Office Location"
+                  title="OutStanding Dimensions Office Location"
                 />
               </div>
             </div>

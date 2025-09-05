@@ -8,7 +8,7 @@ const Testimonials: React.FC = () => {
       name: "Ahmed Al-Rashid",
       position: "CEO, Al-Rashid Development",
       company: "Riyadh, Saudi Arabia",
-      content: "Gulf Engineering delivered exceptional results on our mixed-use development project. Their attention to detail and commitment to cultural authenticity while embracing modern design principles exceeded our expectations.",
+      content: "OutStanding Dimensions delivered exceptional results on our mixed-use development project. Their attention to detail and commitment to cultural authenticity while embracing modern design principles exceeded our expectations.",
       rating: 5,
       image: "https://images.pexels.com/photos/3862365/pexels-photo-3862365.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&fit=crop"
     },
@@ -26,7 +26,7 @@ const Testimonials: React.FC = () => {
       name: "Mohammed Al-Saud",
       position: "Investment Manager",
       company: "Kingdom Holdings",
-      content: "Gulf Engineering's innovative approach to smart infrastructure development has been instrumental in our vision for future cities. Their technical expertise and project management skills are unmatched.",
+      content: "OutStanding Dimensions's innovative approach to smart infrastructure development has been instrumental in our vision for future cities. Their technical expertise and project management skills are unmatched.",
       rating: 5,
       image: "https://images.pexels.com/photos/3862365/pexels-photo-3862365.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&fit=crop"
     },
@@ -35,7 +35,7 @@ const Testimonials: React.FC = () => {
       name: "Nora Al-Thani",
       position: "Urban Planning Consultant",
       company: "Doha Municipality",
-      content: "Working with Gulf Engineering on our waterfront development was a remarkable experience. They brought creative solutions to complex engineering challenges while respecting our environmental concerns.",
+      content: "Working with OutStanding Dimensions on our waterfront development was a remarkable experience. They brought creative solutions to complex engineering challenges while respecting our environmental concerns.",
       rating: 5,
       image: "https://images.pexels.com/photos/3862365/pexels-photo-3862365.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&fit=crop"
     }
@@ -51,7 +51,7 @@ const Testimonials: React.FC = () => {
           </h2>
           <div className="w-24 h-1 gradient-gold mx-auto mb-6"></div>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            Hear what our valued clients across the Gulf region say about their experience 
+            Hear what our valued clients across the Gulf region say about their experience
             working with our expert engineering and architecture teams.
           </p>
         </div>
@@ -59,7 +59,7 @@ const Testimonials: React.FC = () => {
         {/* Testimonials Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {testimonials.map((testimonial) => (
-            <div 
+            <div
               key={testimonial.id}
               className="bg-white rounded-2xl p-8 shadow-md hover-lift relative"
             >
@@ -67,19 +67,19 @@ const Testimonials: React.FC = () => {
               <div className="absolute top-6 right-6">
                 <Quote className="w-8 h-8 text-yellow-600/20" />
               </div>
-              
+
               {/* Rating */}
               <div className="flex items-center space-x-1 mb-6">
                 {[...Array(testimonial.rating)].map((_, i) => (
                   <Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
                 ))}
               </div>
-              
+
               {/* Content */}
               <p className="text-gray-700 leading-relaxed mb-6 text-lg">
                 "{testimonial.content}"
               </p>
-              
+
               {/* Client Info */}
               <div className="flex items-center space-x-4">
                 <img

@@ -39,16 +39,16 @@ const Footer: React.FC = () => {
                 <span className="text-white font-bold text-2xl">G</span>
               </div>
               <div>
-                <h3 className="text-xl font-bold">Gulf Engineering</h3>
+                <h3 className="text-xl font-bold">OutStanding Dimensions</h3>
                 <p className="text-gray-300 text-sm">Civil & Architecture</p>
               </div>
             </div>
-            
+
             <p className="text-gray-300 leading-relaxed mb-6">
-              Leading civil engineering and architectural firm serving the Gulf region with 
+              Leading civil engineering and architectural firm serving the Gulf region with
               innovative solutions and uncompromising quality since 2009.
             </p>
-            
+
             <div className="flex space-x-4">
               {socialLinks.map((social, index) => (
                 <a
@@ -103,12 +103,12 @@ const Footer: React.FC = () => {
                   <p>Riyadh 12345, Saudi Arabia</p>
                 </div>
               </div>
-              
+
               <div className="flex items-center space-x-3">
                 <Phone className="w-5 h-5 text-yellow-600 flex-shrink-0" />
                 <span className="text-gray-300 text-sm">+966 11 123 4567</span>
               </div>
-              
+
               <div className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-yellow-600 flex-shrink-0" />
                 <span className="text-gray-300 text-sm">info@gulfengineering.com</span>
@@ -121,9 +121,9 @@ const Footer: React.FC = () => {
         <div className="border-t border-white/20 py-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="text-gray-300 text-sm">
-              © 2025 Gulf Engineering. All rights reserved.
+              © 2025 OutStanding Dimensions. All rights reserved.
             </div>
-            
+
             <div className="flex space-x-6 text-sm text-gray-300">
               <a href="#" className="hover:text-yellow-400 transition-colors duration-200">Privacy Policy</a>
               <a href="#" className="hover:text-yellow-400 transition-colors duration-200">Terms of Service</a>

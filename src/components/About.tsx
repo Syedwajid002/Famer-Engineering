@@ -31,11 +31,11 @@ const About: React.FC = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-display font-bold text-blue-900 mb-6">
-            About Gulf Engineering
+            About OutStanding Dimensions
           </h2>
           <div className="w-24 h-1 gradient-gold mx-auto mb-6"></div>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            For over 15 years, we have been at the forefront of civil engineering and architectural 
+            For over 15 years, we have been at the forefront of civil engineering and architectural
             innovation in the Gulf region, shaping skylines and building the infrastructure of tomorrow.
           </p>
         </div>
@@ -46,24 +46,24 @@ const About: React.FC = () => {
             <h3 className="text-3xl font-display font-semibold text-blue-900 mb-6">
               Engineering Excellence Since 2009
             </h3>
-            
+
             <div className="space-y-6 text-gray-700 leading-relaxed">
               <p>
-                Founded in Riyadh with expanded operations in Doha, Gulf Engineering stands as a beacon 
-                of innovation in the civil engineering and architectural landscape. Our commitment to 
+                Founded in Riyadh with expanded operations in Doha, OutStanding Dimensions stands as a beacon
+                of innovation in the civil engineering and architectural landscape. Our commitment to
                 excellence has earned us recognition as one of the region's most trusted construction partners.
               </p>
-              
+
               <p>
-                We specialize in large-scale infrastructure projects, from iconic residential complexes 
-                to cutting-edge commercial developments. Our multidisciplinary approach combines traditional 
-                Gulf architectural heritage with modern engineering techniques, creating structures that 
+                We specialize in large-scale infrastructure projects, from iconic residential complexes
+                to cutting-edge commercial developments. Our multidisciplinary approach combines traditional
+                Gulf architectural heritage with modern engineering techniques, creating structures that
                 honor the past while embracing the future.
               </p>
-              
+
               <p>
-                Our portfolio spans across mega-projects aligned with the ambitious development goals 
-                of Saudi Arabia's Vision 2030 and Qatar's National Vision 2030, contributing to the 
+                Our portfolio spans across mega-projects aligned with the ambitious development goals
+                of Saudi Arabia's Vision 2030 and Qatar's National Vision 2030, contributing to the
                 transformation of the Gulf region into a global hub of innovation and sustainability.
               </p>
             </div>
@@ -80,12 +80,12 @@ const About: React.FC = () => {
             <div className="relative rounded-2xl overflow-hidden shadow-luxury">
               <img
                 src="https://images.pexels.com/photos/3862365/pexels-photo-3862365.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop"
-                alt="Gulf Engineering Team"
+                alt="OutStanding Dimensions Team"
                 className="w-full h-96 object-cover"
               />
               <div className="absolute inset-0 gradient-navy opacity-20"></div>
             </div>
-            
+
             {/* Floating Card */}
             <div className="absolute -bottom-8 -left-8 bg-white p-6 rounded-xl shadow-luxury max-w-xs">
               <div className="text-2xl font-bold text-blue-900 mb-1">15+ Years</div>
@@ -97,7 +97,7 @@ const About: React.FC = () => {
         {/* Achievements Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-20">
           {achievements.map((achievement, index) => (
-            <div 
+            <div
               key={index}
               className="bg-white p-6 rounded-xl shadow-md hover-lift text-center"
             >

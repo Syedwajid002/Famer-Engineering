@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, ChevronDown } from 'lucide-react';
+import logo from "../Assets/OSlogo.png"
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -47,11 +48,11 @@ const Header: React.FC = () => {
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
           <div className="flex items-center space-x-3">
-            <div className="w-10 h-10 gradient-gold rounded-lg flex items-center justify-center">
-              <img src="https://img.freepik.com/premium-vector/creative-modern-civil-engineering-logo_569684-1552.jpg" alt="" />
+            <div className="w-10 h-10  rounded-lg flex items-center justify-center">
+              <img src={logo} alt="OutStanding Dimensions" />
             </div>
             <div>
-              <h1 className="text-xl font-bold text-navy-900">FAMER Engineering</h1>
+              <h1 className="text-xl font-bold text-navy-900">OutStanding Dimensions</h1>
               <p className="text-xs text-gray-600">Civil & Architecture</p>
             </div>
           </div>
