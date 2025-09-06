@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
-import { ExternalLink, MapPin, Calendar } from 'lucide-react';
+import { MapPin, Calendar } from 'lucide-react';
+import morjanacover from "../Assets/Morjana/Cover.png";
+import { Link } from 'react-router-dom';  // ✅ Correct import
 
 const Projects: React.FC = () => {
   const [activeFilter, setActiveFilter] = useState('all');
@@ -13,13 +15,13 @@ const Projects: React.FC = () => {
 
   const projects = [
     {
-      id: 1,
-      title: "Al Faisaliah Tower Extension",
-      category: "architecture",
-      location: "Riyadh, Saudi Arabia",
-      year: "2023",
-      description: "Luxury commercial tower featuring modern Islamic architectural elements with sustainable design principles.",
-      image: "https://southcoastimprovement.com/wp-content/uploads/2025/03/8254661.jpg",
+      id: "morjana",
+      title: "Morjana by NHC",
+      category: "civil",
+      location: "Doha, Qatar",
+      year: "2025 and ongoing",
+      description: "Affordable and exquisite luxury housing In Amir Fawaz district Jeddah.",
+      cover: morjanacover,
       tags: ["Commercial", "Sustainable", "High-Rise"]
     },
     {
@@ -29,7 +31,7 @@ const Projects: React.FC = () => {
       location: "Doha, Qatar",
       year: "2024",
       description: "State-of-the-art marina infrastructure with advanced water management and luxury amenities.",
-      image: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/23/6b/78/42/lusail.jpg?w=1200&h=-1&s=1",
+      cover: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/23/6b/78/42/lusail.jpg?w=1200&h=-1&s=1",
       tags: ["Marine", "Luxury", "Infrastructure"]
     },
     {
@@ -39,7 +41,7 @@ const Projects: React.FC = () => {
       location: "Jeddah, Saudi Arabia",
       year: "2023",
       description: "Comprehensive urban development project including roads, utilities, and smart city integration.",
-      image: "https://www.constructionweekonline.com/cloud/2023/06/12/King-Abdullah-Economic-City.jpg",
+      cover: "https://www.constructionweekonline.com/cloud/2023/06/12/King-Abdullah-Economic-City.jpg",
       tags: ["Urban Planning", "Smart City", "Utilities"]
     },
     {
@@ -49,7 +51,7 @@ const Projects: React.FC = () => {
       location: "Lusail, Qatar",
       year: "2022",
       description: "Advanced infrastructure supporting Qatar's premier stadium with innovative crowd management solutions.",
-      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQD-ae_-bM9LZCaeYz5Um985yv2kveCQJb6Nw&s",
+      cover: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQD-ae_-bM9LZCaeYz5Um985yv2kveCQJb6Nw&s",
       tags: ["Sports", "Infrastructure", "Innovation"]
     },
     {
@@ -59,7 +61,7 @@ const Projects: React.FC = () => {
       location: "NEOM, Saudi Arabia",
       year: "2024",
       description: "Futuristic residential architecture contributing to the world's most ambitious urban project.",
-      image: "https://images.pexels.com/photos/1797428/pexels-photo-1797428.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop",
+      cover: "https://images.pexels.com/photos/1797428/pexels-photo-1797428.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop",
       tags: ["Futuristic", "Residential", "Mega-Project"]
     },
     {
@@ -69,7 +71,7 @@ const Projects: React.FC = () => {
       location: "Doha, Qatar",
       year: "2023",
       description: "Elegant waterfront promenade with integrated cultural spaces and advanced flood protection.",
-      image: "https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop",
+      cover: "https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop",
       tags: ["Waterfront", "Cultural", "Protection"]
     }
   ];
@@ -81,6 +83,7 @@ const Projects: React.FC = () => {
   return (
     <section id="projects" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-display font-bold text-blue-900 mb-6">
@@ -112,62 +115,32 @@ const Projects: React.FC = () => {
         {/* Projects Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {filteredProjects.map((project) => (
-            <div
-              key={project.id}
-              className="group bg-white rounded-2xl overflow-hidden shadow-md hover-lift"
-            >
-              <div className="relative overflow-hidden">
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
-                />
-                <div className="absolute inset-0 bg-blue-900/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                  <ExternalLink className="w-8 h-8 text-white" />
+            <Link key={project.id} to={`/projects/${project.id}`}>
+              <div className="group bg-white rounded-2xl overflow-hidden shadow-md hover-lift cursor-pointer">
+                <div className="relative overflow-hidden">
+                  <img
+                    src={project.cover}
+                    alt={project.title}
+                    className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
+                  />
+                </div>
+                <div className="p-6">
+                  <h3 className="text-xl font-semibold text-blue-900 mb-2 group-hover:text-yellow-600 transition-colors duration-300">
+                    {project.title}
+                  </h3>
+                  <p className="text-gray-600 mb-4 leading-relaxed">{project.description}</p>
                 </div>
               </div>
-
-              <div className="p-6">
-                <div className="flex flex-wrap gap-2 mb-3">
-                  {project.tags.map((tag, idx) => (
-                    <span
-                      key={idx}
-                      className="px-3 py-1 text-xs font-medium bg-yellow-100 text-yellow-800 rounded-full"
-                    >
-                      {tag}
-                    </span>
-                  ))}
-                </div>
-
-                <h3 className="text-xl font-semibold text-blue-900 mb-2 group-hover:text-yellow-600 transition-colors duration-300">
-                  {project.title}
-                </h3>
-
-                <p className="text-gray-600 mb-4 leading-relaxed">
-                  {project.description}
-                </p>
-
-                <div className="flex items-center justify-between text-sm text-gray-500">
-                  <div className="flex items-center space-x-1">
-                    <MapPin className="w-4 h-4" />
-                    <span>{project.location}</span>
-                  </div>
-                  <div className="flex items-center space-x-1">
-                    <Calendar className="w-4 h-4" />
-                    <span>{project.year}</span>
-                  </div>
-                </div>
-              </div>
-            </div>
+            </Link>
           ))}
         </div>
+      </div>
 
-        {/* Load More Button */}
-        <div className="text-center mt-12">
-          <button className="border-2 border-yellow-600 text-yellow-600 px-8 py-3 rounded-lg font-semibold hover:bg-yellow-600 hover:text-white transition-all duration-300">
-            View All Projects
-          </button>
-        </div>
+      {/* Load More Button */}
+      <div className="text-center mt-12">
+        <button className="border-2 border-yellow-600 text-yellow-600 px-8 py-3 rounded-lg font-semibold hover:bg-yellow-600 hover:text-white transition-all duration-300">
+          View All Projects
+        </button>
       </div>
     </section>
   );
