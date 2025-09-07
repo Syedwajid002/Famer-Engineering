@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { MapPin, Calendar } from 'lucide-react';
 import morjanacover from "../Assets/Morjana/Cover.png";
+import daniatcover from "../Assets/Daniat-Wadina/cover.png"
+import masarcover from "../Assets/MASAR/cover.jpg"
 import { Link } from 'react-router-dom';  // ✅ Correct import
 
 const Projects: React.FC = () => {
@@ -25,55 +27,36 @@ const Projects: React.FC = () => {
       tags: ["Commercial", "Sustainable", "High-Rise"]
     },
     {
-      id: 2,
-      title: "Pearl Qatar Marina",
+      id: "MASAR",
+      title: "MASAR - Al Diyar Al Arabia",
       category: "civil",
-      location: "Doha, Qatar",
+      location: "Makkah, Saudi Arabia",
       year: "2024",
-      description: "State-of-the-art marina infrastructure with advanced water management and luxury amenities.",
-      cover: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/23/6b/78/42/lusail.jpg?w=1200&h=-1&s=1",
+      description: "Extending over 1.2 million SQM and with its strategic location at the center of Makkah",
+      cover: masarcover,
       tags: ["Marine", "Luxury", "Infrastructure"]
     },
     {
-      id: 3,
-      title: "King Abdullah Economic City",
-      category: "infrastructure",
-      location: "Jeddah, Saudi Arabia",
+      id: "Daniat-Wedina",
+      title: "DANIAT-WEDIANA",
+      category: "Architecturral Finish and interior works",
+      location: "Taif, Makkah",
       year: "2023",
       description: "Comprehensive urban development project including roads, utilities, and smart city integration.",
-      cover: "https://www.constructionweekonline.com/cloud/2023/06/12/King-Abdullah-Economic-City.jpg",
+      cover: daniatcover,
       tags: ["Urban Planning", "Smart City", "Utilities"]
     },
-    {
-      id: 4,
-      title: "Lusail Stadium Infrastructure",
-      category: "civil",
-      location: "Lusail, Qatar",
-      year: "2022",
-      description: "Advanced infrastructure supporting Qatar's premier stadium with innovative crowd management solutions.",
-      cover: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQD-ae_-bM9LZCaeYz5Um985yv2kveCQJb6Nw&s",
-      tags: ["Sports", "Infrastructure", "Innovation"]
-    },
-    {
-      id: 5,
-      title: "NEOM Linear City",
-      category: "architecture",
-      location: "NEOM, Saudi Arabia",
-      year: "2024",
-      description: "Futuristic residential architecture contributing to the world's most ambitious urban project.",
-      cover: "https://images.pexels.com/photos/1797428/pexels-photo-1797428.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop",
-      tags: ["Futuristic", "Residential", "Mega-Project"]
-    },
-    {
-      id: 6,
-      title: "Corniche Waterfront",
-      category: "infrastructure",
-      location: "Doha, Qatar",
-      year: "2023",
-      description: "Elegant waterfront promenade with integrated cultural spaces and advanced flood protection.",
-      cover: "https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop",
-      tags: ["Waterfront", "Cultural", "Protection"]
-    }
+    // {
+    //   id: 4,
+    //   title: "Lusail Stadium Infrastructure",
+    //   category: "civil",
+    //   location: "Lusail, Qatar",
+    //   year: "2022",
+    //   description: "Advanced infrastructure supporting Qatar's premier stadium with innovative crowd management solutions.",
+    //   cover: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQD-ae_-bM9LZCaeYz5Um985yv2kveCQJb6Nw&s",
+    //   tags: ["Sports", "Infrastructure", "Innovation"]
+    // },
+
   ];
 
   const filteredProjects = activeFilter === 'all'
@@ -97,7 +80,7 @@ const Projects: React.FC = () => {
         </div>
 
         {/* Filter Buttons */}
-        <div className="flex flex-wrap justify-center mb-12 space-x-4">
+        {/* <div className="flex flex-wrap justify-center mb-12 space-x-4">
           {filters.map((filter) => (
             <button
               key={filter.id}
@@ -110,7 +93,7 @@ const Projects: React.FC = () => {
               {filter.label}
             </button>
           ))}
-        </div>
+        </div> */}
 
         {/* Projects Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -138,9 +121,7 @@ const Projects: React.FC = () => {
 
       {/* Load More Button */}
       <div className="text-center mt-12">
-        <button className="border-2 border-yellow-600 text-yellow-600 px-8 py-3 rounded-lg font-semibold hover:bg-yellow-600 hover:text-white transition-all duration-300">
-          View All Projects
-        </button>
+
       </div>
     </section>
   );
