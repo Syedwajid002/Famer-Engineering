@@ -46,7 +46,7 @@ const Footer: React.FC = () => {
 
             <p className="text-gray-300 leading-relaxed mb-6">
               Leading civil engineering and architectural firm serving the Gulf region with
-              innovative solutions and uncompromising quality since 2009.
+              innovative solutions and uncompromising quality since 2015.
             </p>
 
             <div className="flex space-x-4">
@@ -93,7 +93,7 @@ const Footer: React.FC = () => {
           </div>
 
           {/* Contact Info */}
-          <div>
+          {/* <div>
             <h4 className="text-lg font-semibold mb-6">Contact Information</h4>
             <div className="space-y-4">
               <div className="flex items-start space-x-3">
@@ -114,7 +114,7 @@ const Footer: React.FC = () => {
                 <span className="text-gray-300 text-sm">info@gulfengineering.com</span>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
 
         {/* Bottom Footer */}

@@ -11,7 +11,7 @@ const About: React.FC = () => {
     {
       icon: <Users className="w-8 h-8 text-yellow-600" />,
       title: "Expert Team",
-      description: "150+ certified engineers and architects with international expertise"
+      description: "50+ certified engineers and architects with international expertise"
     },
     {
       icon: <Globe className="w-8 h-8 text-yellow-600" />,
@@ -35,7 +35,7 @@ const About: React.FC = () => {
           </h2>
           <div className="w-24 h-1 gradient-gold mx-auto mb-6"></div>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            For over 15 years, we have been at the forefront of civil engineering and architectural
+            For over 10 years, we have been at the forefront of civil engineering and architectural
             innovation in the Gulf region, shaping skylines and building the infrastructure of tomorrow.
           </p>
         </div>
@@ -44,7 +44,7 @@ const About: React.FC = () => {
           {/* Content */}
           <div>
             <h3 className="text-3xl font-display font-semibold text-blue-900 mb-6">
-              Engineering Excellence Since 2009
+              Engineering Excellence Since 2015
             </h3>
 
             <div className="space-y-6 text-gray-700 leading-relaxed">
@@ -88,7 +88,7 @@ const About: React.FC = () => {
 
             {/* Floating Card */}
             <div className="absolute -bottom-8 -left-8 bg-white p-6 rounded-xl shadow-luxury max-w-xs">
-              <div className="text-2xl font-bold text-blue-900 mb-1">15+ Years</div>
+              <div className="text-2xl font-bold text-blue-900 mb-1">10+ Years</div>
               <div className="text-gray-600">of architectural excellence in the Gulf region</div>
             </div>
           </div>

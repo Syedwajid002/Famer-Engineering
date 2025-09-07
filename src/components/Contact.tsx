@@ -32,13 +32,13 @@ const Contact: React.FC = () => {
     },
     {
       icon: <Mail className="w-6 h-6" />,
-      title: "Email Addresses",
-      details: ["info@OutStandingDimensions.com", "projects@OutStandingDimensions.com"]
+      title: "Email Address",
+      details: ["faisaljameel@odc5.com"]
     },
     {
       icon: <MapPin className="w-6 h-6" />,
       title: "Office Locations",
-      details: ["King Fahd Road, Riyadh 12345", "Cornishe, Jeddah, Saudi Arabia"]
+      details: [""]
     },
     {
       icon: <Clock className="w-6 h-6" />,
@@ -163,7 +163,7 @@ const Contact: React.FC = () => {
             </div>
 
             {/* Google Map */}
-            <div className="mt-12">
+            {/* <div className="mt-12">
               <h4 className="text-lg font-semibold text-blue-900 mb-4">Our Riyadh Office</h4>
               <div className="rounded-2xl overflow-hidden shadow-md h-64">
                 <iframe
@@ -177,7 +177,7 @@ const Contact: React.FC = () => {
                   title="OutStanding Dimensions Office Location"
                 />
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
