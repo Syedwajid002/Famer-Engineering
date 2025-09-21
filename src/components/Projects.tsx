@@ -27,7 +27,7 @@ const Projects: React.FC = () => {
       tags: ["Commercial", "Sustainable", "High-Rise"]
     },
     {
-      id: "MASAR",
+      id: "masar",  // fixed
       title: "MASAR - Al Diyar Al Arabia",
       category: "civil",
       location: "Makkah, Saudi Arabia",
@@ -37,27 +37,17 @@ const Projects: React.FC = () => {
       tags: ["Marine", "Luxury", "Infrastructure"]
     },
     {
-      id: "Daniat-Wedina",
-      title: "DANIAT-WEDIANA",
-      category: "Architecturral Finish and interior works",
+      id: "daniat-wadina", // fixed typo + standardized
+      title: "Daniat-Wadina",
+      category: "architecture", // match your filter button
       location: "Taif, Makkah",
       year: "2023",
       description: "Comprehensive urban development project including roads, utilities, and smart city integration.",
       cover: daniatcover,
       tags: ["Urban Planning", "Smart City", "Utilities"]
-    },
-    // {
-    //   id: 4,
-    //   title: "Lusail Stadium Infrastructure",
-    //   category: "civil",
-    //   location: "Lusail, Qatar",
-    //   year: "2022",
-    //   description: "Advanced infrastructure supporting Qatar's premier stadium with innovative crowd management solutions.",
-    //   cover: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQD-ae_-bM9LZCaeYz5Um985yv2kveCQJb6Nw&s",
-    //   tags: ["Sports", "Infrastructure", "Innovation"]
-    // },
-
+    }
   ];
+
 
   const filteredProjects = activeFilter === 'all'
     ? projects

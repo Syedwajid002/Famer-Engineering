@@ -5,10 +5,12 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Home from "./Pages/Home.jsx";
 import ProjectDetails from "./components/ProjectDetails";
+import ScrollToTop from "./components/ScrollToTop.js";
 
 function App() {
   return (
     <div className="min-h-screen">
+      <ScrollToTop />
       <Header />
 
       <Routes>
