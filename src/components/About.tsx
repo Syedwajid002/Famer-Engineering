@@ -16,12 +16,12 @@ const About: React.FC = () => {
     {
       icon: <Globe className="w-8 h-8 text-yellow-600" />,
       title: "Regional Presence",
-      description: "Operations across Saudi Arabia, Qatar, and the broader GCC"
+      description: "Operations across Saudi Arabia, and the broader GCC"
     },
     {
       icon: <Target className="w-8 h-8 text-yellow-600" />,
       title: "Vision 2030",
-      description: "Aligned with Saudi Arabia's Vision 2030 and Qatar's National Vision"
+      description: "Aligned with Saudi Arabia's Vision 2030."
     }
   ];
 
@@ -63,7 +63,7 @@ const About: React.FC = () => {
 
               <p>
                 Our portfolio spans across mega-projects aligned with the ambitious development goals
-                of Saudi Arabia's Vision 2030 and Qatar's National Vision 2030, contributing to the
+                of Saudi Arabia's Vision 2030, contributing to the
                 transformation of the Gulf region into a global hub of innovation and sustainability.
               </p>
             </div>

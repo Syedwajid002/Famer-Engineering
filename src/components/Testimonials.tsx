@@ -16,7 +16,7 @@ const Testimonials: React.FC = () => {
       id: 2,
       name: "Fatima Al-Kuwari",
       position: "Project Director",
-      company: "Qatar National Development",
+      company: "Saudi National Development",
       content: "The team's expertise in Gulf architectural heritage combined with sustainable engineering practices made them the perfect partner for our cultural center project. Truly world-class professionals.",
       rating: 5,
       image: "https://images.pexels.com/photos/3862365/pexels-photo-3862365.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&fit=crop"
