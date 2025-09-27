@@ -46,7 +46,7 @@ const Footer: React.FC = () => {
 
             <p className="text-gray-300 leading-relaxed mb-6">
               Leading civil engineering and architectural firm serving the Gulf region with
-              innovative solutions and uncompromising quality since 2015.
+              innovative solutions and uncompromising quality since 2014.
             </p>
 
             <div className="flex space-x-4">
